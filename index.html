@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <title>Alura Challenge</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/coluna_esquerda.css">
+        <link rel="stylesheet" href="css/centro.css">
+        <link rel="stylesheet" href="css/coluna_direita.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    </head>
+
+    <!-- CABEÇALHO -->
+
+    <body>
+        <header>
+            <img class="logo" src="img/Logo.svg" alt="Logo escrito Alura DEV">
+
+            <input type="text" name="busca" class="busca inputs" id="busca" placeholder="   Busque por algo">
+
+            <div class="usuario-logado">
+                <img class="foto-usuario" src="img/Photo.svg" alt="Foto de perfil do usuário">
+                <span class="nome">Harry</span>
+            </div>
+
+            <div class="nav-mobile">
+                <img class="lupa" src="img/Lupa.svg" alt="Lupa">
+                <img class="barras" src="img/Barras.svg" alt="Três barras horizontais">
+            </div>
+        </header>
+
+        <!-- COLUNA ESQUERDA -->
+
+        <main>
+            <menu class="coluna-esquerda">
+                <h3>Menu</h3>
+
+                <div class="menu menu-editor">
+                    <img src="img/Editor_Icon.svg" class="icone-menu" alt="Ícone de código HTML">
+                    <a href="#">Editor de código</a>
+                </div>
+
+                <div class="menu menu-comunidade">
+                    <img src="img/Comunidade_Icon.svg" class="icone-menu" alt="Ícone representando um grupo de pessoas">
+                    <a href="#">Comunidade</a>
+                </div>
+            </menu>
+
+            <!-- CENTRO -->
+
+            <div class="centro">
+                <div class="fundo-colorido">
+
+                    <div class="fundo-preto">
+
+                        <img class="mac_buttons" src="img/mac_buttons.svg" alt="Três círculos: um vermelho, um amarelo e um verde">
+
+                        <textarea name="editor" id="editor"></textarea>
+                    </div>
+                </div>
+
+                <input type="submit" value="Visualizar com o highlight" class="botao-visualizar">
+            </div>
+
+            <!-- COLUNA DIREITA -->
+
+            <menu>
+                <div class="coluna-direita">
+                    <div class="seu-projeto">
+                        <h3>Seu projeto</h3>
+
+                        <input class="inputs nome-projeto itens-menu-direito" type="text" placeholder="Nome do seu projeto">
+
+                        <textarea class="inputs descricao-projeto itens-menu-direito" type="text" placeholder="Descrição do seu projeto"></textarea>
+                    </div>
+
+                    <div class="personalizacao">
+                        <h3>Personalização</h3>
+
+                        <select class="inputs seletor-linguagem itens-menu-direito" name="linguagem" id="linguagem">
+                            <option value="javascript">JavaScript</option>
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                        </select>
+
+                        <input class="seletor-cor itens-menu-direito" type="color" value="#6BD1FF">
+                        
+                        <input class="botao-salvar itens-menu-direito" type="submit" value="Salvar projeto">
+                    </div>
+
+                    
+                </div>
+            </menu>
+    </body>
+
+</html>

@@ -1,0 +1,74 @@
+:root {
+    --bg-color: #051D3B;
+    --cor-input: rgba(255, 255, 255, 0.16);
+    --cor-placeholder: rgba(255, 255, 255, 0.64);
+    --cor-texto: #FFFFFF;
+    --cor-botao-visualizar: #5081FB14;
+    --cor-botao-cor: rgba(196, 196, 196, 0.01);
+    --cor-select: #6BD1FF;
+    --cor-botao-salvar: #5081FB;
+    --bg-editor: #141414;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: auto;
+}
+
+.inputs {
+    border-radius: 8px;
+    background-color: var(--cor-input);
+    border: none;
+    resize: none;
+    scroll-behavior: smooth;
+    padding-left: .75rem;
+}
+
+.inputs::placeholder {
+    color: var(--cor-placeholder);
+    font-size: 1rem;
+    font-family: 'Inter';
+}
+
+h3 {
+    font-size: .75rem;
+    font-family: 'Inter';
+    color: var(--cor-texto);
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    text-align: left;
+}
+
+h4, a {
+    font-size: 1rem;
+    font-family: 'Inter';
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        margin: 0 2rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+    }
+}
