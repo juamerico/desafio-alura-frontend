@@ -65,17 +65,22 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .projeto {
+    /* ESPAÇO PARA IMPRESSAO DE NOVOS PROJETOS */
+    .container {
         grid-area: 1 / 2 / 2 / 3;
     }
 
+    /* ESTILIZAÇÃO DA EXIBIÇÃO DO PROJETO */
+    /* caixa */
     .fundo-colorido {
         width: 100%;
         height: 40vh;
+        background-color: #9AFF6B;
     }
 
     .fundo-preto {
-        height: 75%;
+        height: 65%;
+        width: 80%;
     }
 
     .mac_buttons {
@@ -87,24 +92,40 @@
         width: 100%;
     }
 
+    /* descrição e social */
     .projeto {
         background-color: rgba(0, 0, 0, 0.16);
         border-radius: 8px;
-    }
-
-    .fundo-colorido {
-        background-color: #9AFF6B;
+        width: 40%;
     }
 
     .projeto-info {
+        padding: 1rem 1rem;
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
     }
 
+    .projeto-info h1 {
+        grid-area: 1 / 1 / 1 / 3;
+        padding-bottom: 1rem;
+    }
+
+    .projeto-info p {
+        grid-area: 2 / 1 / 2 / 3;
+        padding-bottom: 2rem;
+    }
+
     .social {
-        width: 20%;
+        grid-area: 3 / 1 / 4 / 2;
+        justify-self: start;
+        width: 60%;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .projeto-usuario {
+        grid-area: 3 / 2 / 4 / 3;
     }
 }
