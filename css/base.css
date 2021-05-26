@@ -1,15 +1,3 @@
-:root {
-    --bg-color: #051D3B;
-    --cor-input: rgba(255, 255, 255, 0.16);
-    --cor-placeholder: rgba(255, 255, 255, 0.64);
-    --cor-texto: #FFFFFF;
-    --cor-botao-visualizar: #5081FB14;
-    --cor-botao-cor: rgba(196, 196, 196, 0.01);
-    --cor-select: #6BD1FF;
-    --cor-botao-salvar: #5081FB;
-    --bg-editor: #141414;
-}
-
 body {
     background-color: var(--bg-color);
     height: 100vh;
@@ -19,6 +7,7 @@ body {
 .inputs {
     border-radius: 8px;
     background-color: var(--cor-input);
+    
     border: none;
     resize: none;
     scroll-behavior: smooth;
@@ -31,6 +20,13 @@ body {
     font-family: 'Inter';
 }
 
+textarea {
+    font-size: 1rem;
+    color: var(--cor-texto);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
 h3 {
     font-size: .75rem;
     font-family: 'Inter';
@@ -40,7 +36,7 @@ h3 {
     text-align: left;
 }
 
-h1, p, h4, a, span {
+h1, p, h4, a, span, .inputs {
     font-size: 1rem;
     font-family: 'Inter';
     color: var(--cor-texto);

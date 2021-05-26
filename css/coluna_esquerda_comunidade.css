@@ -2,7 +2,6 @@
     display: none;
 }
 
-
 @media screen and (min-width: 1024px) {
     .menu-editor a {
         opacity: 0.56;
