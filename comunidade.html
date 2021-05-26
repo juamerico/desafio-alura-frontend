@@ -3,21 +3,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
     <head>
-        <title>Editor de Código</title>
+        <title>Comunidade</title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/base_comunidade.css">
         <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/coluna_esquerda.css">
-        <link rel="stylesheet" href="css/centro.css">
-        <link rel="stylesheet" href="css/coluna_direita.css">
+        <link rel="stylesheet" href="css/coluna_esquerda_comunidade.css">
+        <link rel="stylesheet" href="css/centro_comunidade.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     </head>
-
+    
     <!-- CABEÇALHO -->
 
     <body>
+
         <header>
             <img class="logo" src="img/Logo.svg" alt="Logo escrito Alura DEV">
 
@@ -37,23 +37,25 @@
         <!-- COLUNA ESQUERDA -->
 
         <main>
+
             <menu class="coluna-esquerda">
                 <h3>Menu</h3>
 
                 <div class="menu menu-editor">
-                    <img src="img/Editor_Icon.svg" class="icone-menu" alt="Ícone de código HTML">
+                    <img src="img/Icon2.svg" class="icone-menu" alt="Ícone de código HTML">
                     <a href="index.html">Editor de código</a>
                 </div>
 
                 <div class="menu menu-comunidade">
-                    <img src="img/Comunidade_Icon.svg" class="icone-menu" alt="Ícone representando um grupo de pessoas">
+                    <img src="img/Comunidade.svg" class="icone-menu" alt="Ícone representando um grupo de pessoas">
                     <a href="comunidade.html">Comunidade</a>
                 </div>
             </menu>
 
             <!-- CENTRO -->
 
-            <div class="centro">
+            <section class="projeto">
+                <!-- QUADRADO -->
                 <div class="fundo-colorido">
 
                     <div class="fundo-preto">
@@ -63,39 +65,25 @@
                         <textarea name="editor" id="editor"></textarea>
                     </div>
                 </div>
+                <!-- DESCRIÇÃO E SOCIAL -->
+                <div class="projeto-info">
+                    <h1>Título do projeto</h1>
+                    <p>Essa é a descrição do meu projeto</p>
 
-                <input type="submit" value="Visualizar com o highlight" class="botao-visualizar">
-            </div>
+                    <span class="social">
+                        <img src="img/Balao.svg" alt="Balão de fala"><p class="comentarios">9</p>
+                        <img src="img/Coracao.svg" alt="Coração"><p class="curtidas">9</p>
+                    </span>
 
-            <!-- COLUNA DIREITA -->
-
-            <menu>
-                <div class="coluna-direita">
-                    <div class="seu-projeto">
-                        <h3>Seu projeto</h3>
-
-                        <input class="inputs nome-projeto itens-menu-direito" type="text" placeholder="Nome do seu projeto">
-
-                        <textarea class="inputs descricao-projeto itens-menu-direito" type="text" placeholder="Descrição do seu projeto"></textarea>
+                    <div class="usuario-logado">
+                        <img class="foto-usuario" src="img/Photo.svg" alt="Foto de perfil do usuário">
+                        <span class="nome">@Harry</span>
                     </div>
-
-                    <div class="personalizacao">
-                        <h3>Personalização</h3>
-
-                        <select class="inputs seletor-linguagem itens-menu-direito" name="linguagem" id="linguagem">
-                            <option value="javascript">JavaScript</option>
-                            <option value="html">HTML</option>
-                            <option value="css">CSS</option>
-                        </select>
-
-                        <input class="seletor-cor itens-menu-direito" type="color" value="#6BD1FF">
-                        
-                        <input class="botao-salvar itens-menu-direito" type="submit" value="Salvar projeto">
-                    </div>
-
-                    
                 </div>
-            </menu>
-    </body>
+                
+            </section>
 
+        </main>
+
+    </body>
 </html>
