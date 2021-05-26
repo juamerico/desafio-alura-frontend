@@ -18,6 +18,11 @@ header {
     display: none;
 }
 
+.usuario-logado:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+}
+
 .logo {
     height: 40%;
 }
@@ -70,14 +75,17 @@ header {
 
     .usuario-logado {
         grid-column: 4 / 4;
+        justify-self: end;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-evenly;
+        width: 7rem;
+        height: 3.5rem;
     }
 
     .foto-usuario {
         width: 2rem;
-        margin-right: .5rem;
+        /* margin-right: .5rem; */
     }
     
     .nome {

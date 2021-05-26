@@ -68,19 +68,27 @@
     /* ESPAÇO PARA IMPRESSAO DE NOVOS PROJETOS */
     .container {
         grid-area: 1 / 2 / 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
     }
 
     /* ESTILIZAÇÃO DA EXIBIÇÃO DO PROJETO */
+    .projeto {
+        background-color: rgba(0, 0, 0, 0.16);
+        border-radius: 8px;
+    }
+
     /* caixa */
     .fundo-colorido {
         width: 100%;
         height: 40vh;
-        background-color: #9AFF6B;
+        background: #9AFF6B;
     }
 
     .fundo-preto {
-        height: 65%;
-        width: 80%;
+        height: 70%;
+        width: 85%;
     }
 
     .mac_buttons {
@@ -93,39 +101,47 @@
     }
 
     /* descrição e social */
-    .projeto {
-        background-color: rgba(0, 0, 0, 0.16);
-        border-radius: 8px;
-        width: 40%;
-    }
-
     .projeto-info {
         padding: 1rem 1rem;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 4rem 4rem auto auto;
         grid-template-rows: auto auto auto;
+        column-gap: 3px;
+        align-items: center;
     }
 
     .projeto-info h1 {
-        grid-area: 1 / 1 / 1 / 3;
+        grid-area: 1 / 1 / 1 / 5;
         padding-bottom: 1rem;
     }
 
     .projeto-info p {
-        grid-area: 2 / 1 / 2 / 3;
+        grid-area: 2 / 1 / 2 / 5;
         padding-bottom: 2rem;
     }
 
-    .social {
-        grid-area: 3 / 1 / 4 / 2;
-        justify-self: start;
-        width: 60%;
+    .container-social {
         display: flex;
-        align-items: center;
         justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+    }
+
+    .container-comentarios {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .container-curtidas {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .container-social:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
     }
 
     .projeto-usuario {
-        grid-area: 3 / 2 / 4 / 3;
+        grid-area: 3 / 4 / 4 / 5;
     }
 }

@@ -75,7 +75,8 @@ main {
 
 @media screen and (min-width: 1024px) {
     main {
-        margin: 0 2rem;
+        margin: 0 2rem 2rem 2rem;
+        padding-bottom: 3rem;
         display: grid;
         grid-template-columns: 2fr 6fr;
         grid-template-rows: auto;
