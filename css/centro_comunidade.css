@@ -1,41 +1,94 @@
+/* ESTILIZAÇÃO DA EXIBIÇÃO DO PROJETO */
+.projeto {
+    background-color: rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+}
+
 .fundo-colorido {
-    height: 70vh;
+    height: 50vh;
     width: 90vw;
     margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--cor-select);
+    background-color: var(--cor-projeto);
     border-radius: 8px;
+
+    display: grid;
+    grid-template-rows: auto;
 }
 
 .fundo-preto {
-    height: 80%;
-    width: 80%;
-
-    padding: 1rem;
+    place-self: center;
+    height: 90%;
+    width: 90%;
     background: var(--bg-editor);
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    display: grid;
+    grid-template-rows: 3rem auto;
 }
 
 .mac_buttons {
-    position: absolute;
-    width: 4rem;
-    height: 1.5rem;
-    align-self: flex-start;
+    place-self: start;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
 
 #editor {
+    place-self: end;
+    justify-self: center;
+    /* margin: 1rem; */
     resize: none;
     background: var(--bg-editor);
     border: none;
+    width: 98%;
+    height: 100%;
+}
+
+/* descrição e social */
+.projeto-info {
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 3px;
+    align-items: center;
+}
+
+.projeto-info h1 {
+    grid-area: 1 / 1 / 1 / 2;
+    padding-bottom: 1rem;
+}
+
+.projeto-info p {
+    grid-area: 2 / 1 / 2 / 2;
+    padding-bottom: 2rem;
+}
+
+.container-social {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: 90%;
-    align-self: flex-end;
+    height: 40px;
+}
+
+.projeto-usuario {
+    grid-area: 1 / 4 / 2 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.auto-layout {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.auto-layout {
+    display: grid;
+    grid-template-columns: auto auto 30% auto;
+    gap: .5rem;
+    align-items: center;
 }
 
 .botao-visualizar {
@@ -52,17 +105,6 @@
     margin-top: 2rem;
 }
 
-@media screen and (min-width: 768px) {
-    .fundo-colorido {
-        height: 65vh;
-        margin-top: 0;
-    }
-
-    .fundo-preto {
-        width: 85%;
-    }
-}
-
 @media screen and (min-width: 1024px) {
     /* ESPAÇO PARA IMPRESSAO DE NOVOS PROJETOS */
     .container {
@@ -72,72 +114,20 @@
         gap: 1.5rem;
     }
 
-    /* ESTILIZAÇÃO DA EXIBIÇÃO DO PROJETO */
-    .projeto {
-        background-color: rgba(0, 0, 0, 0.16);
-        border-radius: 8px;
-    }
-
     /* caixa */
     .fundo-colorido {
+        margin-top: 0;
         width: 100%;
         height: 40vh;
         background: #9AFF6B;
     }
 
     .fundo-preto {
-        height: 70%;
-        width: 85%;
-    }
-
-    .mac_buttons {
-        width: 3rem;
-        height: 1rem;
-    }
-        
-    .botao-visualizar {
-        width: 100%;
-    }
-
-    /* descrição e social */
-    .projeto-info {
-        padding: 1rem 1rem;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        column-gap: 3px;
-        align-items: center;
-    }
-
-    .projeto-info h1 {
-        grid-area: 1 / 1 / 1 / 2;
-        padding-bottom: 1rem;
-    }
-
-    .projeto-info p {
-        grid-area: 2 / 1 / 2 / 2;
-        padding-bottom: 2rem;
-    }
-
-    .container-social {
-        cursor: pointer;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 40px;
+        height: 90%;
+        width: 90%;
     }
 
     .auto-layout {
-        grid-area: 3 / 1 / 4 / 2;
         display: none;
-    }
-
-    /* MOSTRAR APENAS COM HOVER */
-    .auto-layout {
-        display: grid;
-        grid-template-columns: auto auto 30% auto;
-        gap: .5rem;
-        align-items: center;
     }
 }
