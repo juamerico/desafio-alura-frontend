@@ -1,11 +1,10 @@
-let autoLayout = document.querySelector(".auto-layout");
-let projeto = document.querySelector(".projeto");
-let container = document.querySelector(".container");
+// seletor de cor funcional na página do editor
 
-projeto.addEventListener("mouseover", function() {
-    autoLayout.classList.add("exibe");
-});
+let seletorCor = document.querySelector(".seletor-cor");
+let fundoColoridoEditor = document.querySelector(".fundo__colorido--editor");
 
-projeto.addEventListener("mouseout", function() {
-    autoLayout.classList.remove("exibe");
-});
+function trocaCor() {
+    fundoColoridoEditor.style.backgroundColor = seletorCor.value;
+}
+
+seletorCor.addEventListener("mouseout", trocaCor);

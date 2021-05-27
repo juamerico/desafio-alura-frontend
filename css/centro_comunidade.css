@@ -6,6 +6,7 @@
 
 .fundo-colorido {
     height: 50vh;
+    max-height: 300px;
     width: 90vw;
     margin-top: 2rem;
     background-color: var(--cor-projeto);
