@@ -61,7 +61,7 @@
 
 .projeto-info p {
     grid-area: 2 / 1 / 2 / 2;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .container-social {
@@ -114,6 +114,11 @@
         gap: 1.5rem;
     }
 
+    .projeto {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
     /* caixa */
     .fundo-colorido {
         margin-top: 0;
@@ -127,7 +132,21 @@
         width: 90%;
     }
 
+    .projeto-info {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 0;
+    }
+
     .auto-layout {
         display: none;
+    }
+
+    .exibe {
+        display: grid;
+        grid-template-columns: auto auto 30% auto;
+        gap: .5rem;
+        align-items: center;
+        margin: 0 1rem 1rem 1rem;
     }
 }
