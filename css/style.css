@@ -26,6 +26,11 @@
     transition: .5s;
 }
 
+.usuario-logado:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+}
+
 .botao-salvar:hover {
     background: var(--cor-botao-salvar-hover);
     transition: 0.5s;
