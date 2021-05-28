@@ -20,11 +20,12 @@ body {
     font-family: 'Inter';
 }
 
-textarea {
+code {
     font-size: 1rem;
     color: var(--cor-texto);
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
+    letter-spacing: 0.1em;
 }
 
 h3 {
@@ -46,10 +47,6 @@ h1, p, h4, a, span, .inputs {
 html {
     font-size: 14px;
     /* width: 100vw; */
-}
-
-.hamburger {
-    display: none;
 }
 
 main {

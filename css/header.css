@@ -106,7 +106,7 @@ header {
         font-size: 1rem;
     }
 
-    .barras {
+    .barras, .fechar {
         display: none;
     }
 }

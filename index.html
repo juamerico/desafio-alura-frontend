@@ -4,6 +4,8 @@
 <html>
     <head>
         <title>Editor de Código</title>
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/base.css">
@@ -59,7 +61,7 @@
 
                         <img class="mac_buttons" src="img/mac_buttons.svg" alt="Três círculos: um vermelho, um amarelo e um verde">
 
-                        <textarea name="editor" id="editor"></textarea>
+                        <pre><code contenteditable="true" name="editor" id="editor"></code></pre>
                     </div>
                 </div>
 
@@ -90,8 +92,12 @@
                 <input class="botao-salvar itens-menu-direito" type="submit" value="Salvar projeto">
             </div>
 
-            <script src="js/style.js"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+        </main>
+
+        <!-- SCRIPTS -->
+        <script src="js/style.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+        <script src="js/hl.js"></script>
     </body>
 
 </html>
