@@ -1,4 +1,4 @@
-// seletor de cor funcional na página do editor
+// seletor de cor funcional
 
 let seletorCor = document.querySelector(".seletor-cor")
 let fundoColoridoEditor = document.querySelector(".fundo__colorido--editor")
@@ -8,4 +8,5 @@ function trocaCor() {
 }
 
 seletorCor.addEventListener("input", trocaCor)
+
 //

@@ -2,11 +2,15 @@
     display: none;
 }
 
+.mobile-editor a {
+    opacity: 0.56;
+}
+
 @media screen and (min-width: 1024px) {
     .menu-editor a {
         opacity: 0.56;
     }
-    
+
     .coluna-esquerda {
         grid-column: 1 / 2;
         grid-row: 1 / 1;

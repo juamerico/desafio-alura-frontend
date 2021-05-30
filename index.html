@@ -5,8 +5,9 @@
     <head>
         <title>Editor de Código</title>
 
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+        <link rel="stylesheet" href="css/dracula.css">
         <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/menu_mobile.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/header.css">
@@ -18,9 +19,8 @@
 
     </head>
 
-    <!-- CABEÇALHO -->
-
     <body>
+        <!-- CABEÇALHO -->
         <header>
             <img class="logo" src="img/Logo.svg" alt="Logo escrito Alura DEV">
 
@@ -33,11 +33,31 @@
 
             <img class="lupa" src="img/Lupa.svg" alt="Lupa">
             <a href="#" class="barras"><img src="img/Barras.svg" alt="Três barras horizontais"></a>
+            <img class="fechar" src="img/Fechar.svg" alt="Fechar">
         </header>
 
-        <!-- COLUNA ESQUERDA -->
+        <!-- MENU HAMBURGER -->
+        <menu class="menu-mobile">
+            <div class="mobile mobile-editor">
+                <img src="img/Editor_Icon.svg" class="icone-mobile" alt="Ícone de código HTML">
+                <a href="index.html">Editor de código</a>
+            </div>
+
+            <div class="mobile mobile-comunidade">
+                <img src="img/Comunidade_Icon.svg" class="icone-mobile" alt="Ícone representando um grupo de pessoas">
+                <a href="comunidade.html">Comunidade</a>
+            </div>
+
+            <span class="mobile-linha"></span>
+
+            <div class="menu-mobile-usuario">
+                <img class="mobile-foto-usuario" src="img/Photo.svg" alt="Foto de perfil do usuário">
+                <span class="nome">Harry</span>
+            </div>
+        </menu>
 
         <main>
+            <!-- COLUNA ESQUERDA -->
             <menu class="coluna-esquerda">
                 <h3>Menu</h3>
 
@@ -61,7 +81,7 @@
 
                         <img class="mac_buttons" src="img/mac_buttons.svg" alt="Três círculos: um vermelho, um amarelo e um verde">
 
-                        <pre><code contenteditable="true" name="editor" id="editor"></code></pre>
+                        <pre><code spellcheck="false" contenteditable="true" name="editor" id="editor"></code></pre>
                     </div>
                 </div>
 
@@ -95,9 +115,10 @@
         </main>
 
         <!-- SCRIPTS -->
-        <script src="js/style.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
         <script src="js/hl.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/menu_mobile.js"></script>
     </body>
 
 </html>
