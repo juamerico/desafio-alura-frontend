@@ -34,15 +34,19 @@
     padding-top: 1rem;
 }
 
-#editor {
-    place-self: end;
+pre {
+    place-self: start;
     justify-self: center;
-    /* margin: 1rem; */
     resize: none;
     background: var(--bg-editor);
     border: none;
-    width: 98%;
-    height: 100%;
+    width: 100%;
+    max-height: 26vh;
+    overflow: scroll;
+}
+
+code {
+    overflow: auto;
 }
 
 /* descrição e social */

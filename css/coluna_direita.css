@@ -17,10 +17,7 @@
 .descricao-projeto {
     height: 5rem;
     margin-top: 1rem;
-}
-
-.descricao-projeto::placeholder {
-    padding-top: 1rem;
+    line-height: 3rem;
 }
 
 .seletor-linguagem {

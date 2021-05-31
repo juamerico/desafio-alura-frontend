@@ -1,12 +1,36 @@
-// seletor de cor funcional
+const botaoSalvar = document.querySelector(".botao-salvar")
+const nomeProjeto = document.querySelector(".nome-projeto")
+const descricaoProjeto = document.querySelector(".descricao-projeto")
 
-let seletorCor = document.querySelector(".seletor-cor")
-let fundoColoridoEditor = document.querySelector(".fundo__colorido--editor")
+botaoSalvar.addEventListener("click", () => {
+    if (typeof(Storage) !== "undefined") {
+        const projeto = montaProjeto()
+        console.log(projeto)
+        salvaLocalStorage(projeto)
+    } else {
+        console.log("Não suporta o Local Storage")
+    }
+})
 
-function trocaCor() {
-    fundoColoridoEditor.style.backgroundColor = seletorCor.value
+function montaProjeto() {
+    let projeto = {
+        'id': atribuiId(),
+        'detalhesDoProjeto': {
+            'nomeDoProjeto': nomeProjeto.value,
+            'descricaoDoProjeto': descricaoProjeto.value,
+            'codigo': areaDoCodigo.querySelector("code").innerText,
+            'corDaBorda': seletorCor.value,
+            'linguagem': linguagem.value
+        }
+    }
+    return projeto
 }
 
-seletorCor.addEventListener("input", trocaCor)
+function atribuiId() {
+    return localStorage.length
 
-//
+}
+
+function salvaLocalStorage(objetoJson) {
+    localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson))
+}
