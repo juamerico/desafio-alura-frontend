@@ -55,19 +55,40 @@ code {
     padding: 1rem 1rem;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto;
     column-gap: 3px;
     align-items: center;
 }
 
 .projeto-info h1 {
-    grid-area: 1 / 1 / 1 / 2;
+    grid-area: 1 / 1 / 1 / 1;
     padding-bottom: 1rem;
 }
 
 .projeto-info p {
-    grid-area: 2 / 1 / 2 / 2;
+    grid-area: 2 / 1 / 2 / 1;
     padding-bottom: 1rem;
+}
+
+.flex {
+    grid-area: 3 / 1 / 3 / 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-linguagem {
+    background-color: #F65151;
+    width: auto;
+    border-radius: 5px;
+}
+
+.botao-download {
+    color: var(--bg-color);
+    background: var(--cor-botao-salvar);
+    border-radius: 5px;
+    border: none;
+    width: 25%;
+    height: 25px;
 }
 
 .container-social {
@@ -140,7 +161,7 @@ code {
     }
 
     .projeto-info {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         grid-template-rows: auto auto;
         grid-gap: 0;
     }

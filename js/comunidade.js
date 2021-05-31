@@ -47,6 +47,11 @@ function montaCartao(projeto) {
             <div class="projeto-info">
                 <h1>${projeto.detalhesDoProjeto.nomeDoProjeto}</h1>
                 <p>${projeto.detalhesDoProjeto.descricaoDoProjeto}</p>
+
+                <span class="flex">
+                    <span class="info-linguagem">${projeto.detalhesDoProjeto.linguagem}</span>
+                    <button class="botao-download">Salvar .png</button>
+                </span>
             </div>
 
             <div class="auto-layout">

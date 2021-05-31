@@ -10,6 +10,8 @@ botaoSalvar.addEventListener("click", () => {
     } else {
         console.log("Não suporta o Local Storage")
     }
+    
+    location.reload()
 })
 
 function montaProjeto() {

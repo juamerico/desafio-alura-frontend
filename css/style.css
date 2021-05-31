@@ -31,17 +31,17 @@
     border-radius: 8px;
 }
 
-.botao-salvar:hover {
+.botao-salvar:hover, .botao-download:hover {
     background: var(--cor-botao-salvar-hover);
     transition: 0.5s;
 }
 
-.botao-salvar:active {
+.botao-salvar:active, .botao-download:active {
     border: 4px solid var(--borda-botao-salvar-pressed);
     transition: none;
 }
 
-.botao-salvar:focus {
+.botao-salvar:focus, .botao-download:focus {
     background: var(--cor-botao-salvar-focus);
     transition: 0.3s;
 }
