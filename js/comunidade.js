@@ -18,16 +18,7 @@ function mostraProjetos() {
     projetos.forEach(projeto => {
         todosOsProjetos.innerHTML += montaCartao(projeto)
         const cadaProjeto = todosOsProjetos.querySelector(`[data-id="${projeto.id}"]`)
-        cadaProjeto.querySelector("code").innerText = projeto.detalhesDoProjeto.codigo
-
-        const autoLayout = cadaProjeto.querySelector(".auto-layout")
-        cadaProjeto.addEventListener("mouseover", () => {
-            autoLayout.classList.add("exibe")
-        })
-        cadaProjeto.addEventListener("mouseout", () => {
-            autoLayout.classList.remove("exibe")
-        })
-        
+        cadaProjeto.querySelector("code").innerText = projeto.detalhesDoProjeto.codigo        
     })
 
 }
@@ -71,5 +62,17 @@ function montaCartao(projeto) {
         </div>
     `
     return cartao
+
 }
 
+
+//menu social no hover
+[...document.querySelectorAll(".projeto")].forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.querySelector(".auto-layout").style.display = "grid"
+    })
+    
+    item.addEventListener('mouseout', () => {
+        item.querySelector(".auto-layout").style.display = "none"
+    })
+})

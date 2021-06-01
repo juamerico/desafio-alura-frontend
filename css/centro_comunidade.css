@@ -168,10 +168,6 @@ code {
 
     .auto-layout {
         display: none;
-    }
-
-    .exibe {
-        display: grid;
         grid-template-columns: auto auto 30% auto;
         gap: .5rem;
         align-items: center;
