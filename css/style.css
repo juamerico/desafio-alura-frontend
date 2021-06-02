@@ -20,6 +20,10 @@
     --bg-editor: #141414;
 }
 
+.esconde {
+    transform: scale(0);
+    transition: .5s;
+}
 
 .inputs:hover, .inputs:focus {
     background: var(--cor-input-hover);

@@ -47,11 +47,11 @@ function montaCartao(projeto) {
 
             <div class="auto-layout">
                 <div class="container-social container-comentarios">
-                    <img class="icone-social" src="img/Balao.svg" alt="Balão de fala"><span class="comentarios">9</span>
+                    <img class="icone-social" src="img/Balao.svg" alt="Balão de fala"><span class="comentarios">0</span>
                 </div>
 
                 <div class="container-social container-curtidas">
-                    <img class="icone-social" src="img/Coracao.svg" alt="Coração"><span class="curtidas">9</span>
+                    <img class="icone-social branco" src="img/Coracao.svg" alt="Coração"><img class="icone-social vermelho" src="img/Coracao_v.svg" alt="Coração"><span class="curtidas">0</span>
                 </div>
 
                 <div class="usuario-logado projeto-usuario">
@@ -74,5 +74,21 @@ function montaCartao(projeto) {
     
     item.addEventListener('mouseout', () => {
         item.querySelector(".auto-layout").style.display = "none"
+    })
+})
+
+//curtidas
+
+document.querySelectorAll(".container-curtidas").forEach(item => {
+    item.addEventListener('click', () => {
+        if (item.querySelector(".curtidas").textContent !== "1") {
+            item.querySelector(".branco").style.display = "none"
+            item.querySelector(".vermelho").style.display = "unset"
+            item.querySelector(".curtidas").textContent = "1"
+        } else {
+            item.querySelector(".branco").style.display = "unset"
+            item.querySelector(".vermelho").style.display = "none"
+            item.querySelector(".curtidas").textContent = "0"
+        }
     })
 })
