@@ -1,1 +1,0 @@
-const blob = new Blob([])

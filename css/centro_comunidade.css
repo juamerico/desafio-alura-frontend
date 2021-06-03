@@ -145,7 +145,8 @@ code {
         display: flex;
         flex-flow: column wrap;
         margin-bottom: 0;
-        width: 35vw;
+        width: 600px;
+        max-width: 35vw;
     }
 
     /* caixa */

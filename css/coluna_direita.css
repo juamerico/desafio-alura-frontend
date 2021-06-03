@@ -31,7 +31,7 @@
 }
 
 select option {
-    background-color:#3781a3;
+    background-color: #3781a3;
     font-weight: bold;
 }
 
@@ -52,7 +52,6 @@ select option {
 }
 
 .botao-salvar {
-    /* width: 90vw; */
     margin-bottom: 3rem;
     box-sizing: content-box;
 

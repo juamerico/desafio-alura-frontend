@@ -78,7 +78,6 @@ function montaCartao(projeto) {
 })
 
 //curtidas
-
 document.querySelectorAll(".container-curtidas").forEach(item => {
     item.addEventListener('click', () => {
         if (item.querySelector(".curtidas").textContent !== "1") {
@@ -92,3 +91,7 @@ document.querySelectorAll(".container-curtidas").forEach(item => {
         }
     })
 })
+
+//exporta imagem
+const cadaProjeto = todosOsProjetos.querySelectorAll(`[data-id="${projeto.id}"]`)
+const botaoDownload = cadaProjeto.querySelector(".botao-download")
