@@ -18,7 +18,7 @@ function mostraProjetos() {
     projetos.forEach(projeto => {
         todosOsProjetos.innerHTML += montaCartao(projeto)
         const cadaProjeto = todosOsProjetos.querySelector(`[data-id="${projeto.id}"]`)
-        cadaProjeto.querySelector("code").innerText = projeto.detalhesDoProjeto.codigo        
+        cadaProjeto.querySelector("code").innerText = projeto.detalhesDoProjeto.codigo
     })
 
 }
@@ -27,7 +27,7 @@ function montaCartao(projeto) {
     let cartao = `
         <div class="projeto" data-id="${projeto.id}">
 
-            <div style="background-color:${projeto.detalhesDoProjeto.corDaBorda}" class="fundo-colorido projeto-um">
+            <div style="background-color:${projeto.detalhesDoProjeto.corDaBorda}" class="fundo-colorido">
                 <div class="fundo-preto">
                     <img class="mac_buttons" src="img/mac_buttons.svg" alt="Três círculos: um vermelho, um amarelo e um verde">
 
@@ -91,3 +91,18 @@ document.querySelectorAll(".container-curtidas").forEach(item => {
         }
     })
 })
+
+
+//criar imagem
+/* const node = document.querySelectorAll(".fundo-colorido");
+
+domtoimage.toPng(node)
+    .then(function (dataUrl) {
+        const img = new Image();
+        img.src = dataUrl;
+        document.body.appendChild(img);
+    })
+    .catch(function (error) {
+        console.error('oops, something went wrong!', error);
+    });
+ */
