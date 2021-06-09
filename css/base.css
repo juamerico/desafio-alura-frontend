@@ -1,7 +1,12 @@
+html {
+    font-size: 14px;
+    width: 100vw;
+}
+
 body {
     background-color: var(--bg-color);
     height: 100vh;
-    width: auto;
+    width: 100vw;
 }
 
 .inputs {
@@ -9,9 +14,8 @@ body {
     background-color: var(--cor-input);
     
     border: none;
-    resize: none;
-    scroll-behavior: smooth;
-    padding-left: .75rem;
+    /* resize: none; */
+    /* padding-left: .75rem; */
 }
 
 .inputs::placeholder {
@@ -44,16 +48,10 @@ h1, p, h4, a, span, .inputs {
     text-decoration: none;
 }
 
-html {
-    font-size: 14px;
-    /* width: 100vw; */
-}
-
 main {
-    display: grid;
-    grid-template-columns: auto;
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px) {

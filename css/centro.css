@@ -54,7 +54,6 @@ pre {
     color: var(--cor-texto);
     font-family: 'Inter';
     font-size: 1rem;
-    cursor: pointer;
     margin-top: 2rem;
 }
 
@@ -74,5 +73,6 @@ pre {
         
     .botao-visualizar {
         width: 100%;
+        cursor: pointer;
     }
 }

@@ -23,7 +23,7 @@
     <body>
         <!-- CABEÇALHO -->
         <header>
-            <img class="logo" src="img/Logo.svg" alt="Logo escrito Alura DEV">
+            <a href="./index.html"><img class="logo" src="img/Logo.svg" alt="Logo escrito Alura DEV"></a>
 
             <input type="text" name="busca" class="busca inputs" id="busca" placeholder="   Busque por algo">
 
@@ -90,28 +90,29 @@
             </div>
 
             <!-- COLUNA DIREITA -->
+            <form class="form">
+                <div class="seu-projeto">
+                    <h3>Seu projeto</h3>
 
-            <div class="seu-projeto">
-                <h3>Seu projeto</h3>
+                    <input class="inputs nome-projeto itens-menu-direito" type="text" placeholder="Nome do seu projeto" required>
 
-                <input class="inputs nome-projeto itens-menu-direito" type="text" placeholder="Nome do seu projeto">
+                    <input class="inputs descricao-projeto itens-menu-direito" type="text" placeholder="Descrição do seu projeto" required>
+                </div>
 
-                <textarea class="inputs descricao-projeto itens-menu-direito" type="text" placeholder="Descrição do seu projeto"></textarea>
-            </div>
+                <div class="personalizacao">
+                    <h3>Personalização</h3>
 
-            <div class="personalizacao">
-                <h3>Personalização</h3>
+                    <select class="inputs seletor-linguagem itens-menu-direito" name="linguagem" id="linguagem">
+                        <option value="javascript">JavaScript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </select>
 
-                <select class="inputs seletor-linguagem itens-menu-direito" name="linguagem" id="linguagem">
-                    <option value="javascript">JavaScript</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                </select>
-
-                <input class="seletor-cor itens-menu-direito" type="color" value="#6BD1FF">
-                
-                <input class="botao-salvar itens-menu-direito" type="submit" value="Salvar projeto">
-            </div>
+                    <input class="seletor-cor itens-menu-direito" type="color" value="#6BD1FF">
+                    
+                    <input class="botao-salvar itens-menu-direito" type="submit" value="Salvar projeto">
+                </div>
+            </form>
 
         </main>
 

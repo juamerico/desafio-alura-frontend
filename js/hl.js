@@ -5,9 +5,9 @@ const botaoVisualizar = document.querySelector(".botao-visualizar")
 areaDoCodigo.firstChild.focus()
 
 function mudaLinguagem() {
-    const codigo = areaDoCodigo.querySelector("code")
+    const codigo = areaDoCodigo.querySelector("code").innerText
     areaDoCodigo.innerHTML = `<code class="editor hljs ${linguagem.value}" contenteditable="true" spellcheck="false"></code>`
-    areaDoCodigo.firstChild.innerText = codigo.innerText
+    areaDoCodigo.firstChild.innerText = codigo
 }
 
 linguagem.addEventListener('change', () => {

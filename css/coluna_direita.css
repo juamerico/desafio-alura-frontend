@@ -1,31 +1,40 @@
-.itens-menu-direito {
+.form {
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .seu-projeto {
     width: 90vw;
-    grid-row: 2 / 3;
     margin-top: 2rem;
-    padding: 0;
 }
 
 .nome-projeto {
+    width: 90vw;
     height: 3.5rem;
     margin-top: 1rem;
 }
 
 .descricao-projeto {
+    width: 90vw;
     height: 5rem;
     margin-top: 1rem;
-    line-height: 3rem;
+    padding-bottom: 1.5rem;
+    padding-top: 0;
+}
+
+.personalizacao {
+    width: 90vw;
+    margin-top: 2rem;
 }
 
 .seletor-linguagem {
+    width: 90vw;
     margin-top: 1rem;
     cursor: pointer;
     height: 3.5rem;
     font-size: 1rem;
-    box-sizing: content-box;
     background: var(--cor-input);
     color: var(--cor-placeholder);
 }
@@ -35,16 +44,10 @@ select option {
     font-weight: bold;
 }
 
-.personalizacao {
-    width: 90vw;
-    grid-row: 3 / 4;
-    margin-top: 2rem;
-}
-
 .seletor-cor {
-    box-sizing: content-box;
-
+    box-sizing: border-box;
     height: 3.5rem;
+    width: 90vw;
     border: 1px solid #ffffff;
     border-radius: 8px;
     margin-top: 1rem;
@@ -53,16 +56,16 @@ select option {
 
 .botao-salvar {
     margin-bottom: 3rem;
-    box-sizing: content-box;
-
     cursor: pointer;
     margin-top: 2rem;
     height: 3.5rem;
+    width: 90vw;
     font-size: 1rem;
     color: var(--bg-color);
     background: var(--cor-botao-salvar);
     border-radius: 8px;
     border: none;
+    
 }
 
 @media screen and (min-width: 768px) {

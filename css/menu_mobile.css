@@ -1,5 +1,5 @@
 .menu-mobile {
-    display: grid;
+    display: none;
     grid-template-rows: auto auto 3rem auto;
     gap: 1rem;
     align-content: start;
@@ -21,6 +21,7 @@
 .mostra-menu {
     transform: translateX(0);
     transition: 1s;
+    display: grid;
 }
 
 .esconde-menu {
