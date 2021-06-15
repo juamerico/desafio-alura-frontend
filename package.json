@@ -1,0 +1,29 @@
+{
+  "name": "desafio_frontend",
+  "version": "1.0.0",
+  "description": "Alura Dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juamerico/desafio-alura.git"
+  },
+  "keywords": [
+    "AluraDev"
+  ],
+  "author": "Juliana Americo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juamerico/desafio-alura/issues"
+  },
+  "homepage": "https://github.com/juamerico/desafio-alura#readme",
+  "dependencies": {
+    "dom-to-image-more": "^2.8.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "webpack": "^5.39.0"
+  }
+}

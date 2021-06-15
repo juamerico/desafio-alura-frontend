@@ -77,15 +77,6 @@ code {
     line-height: normal;
 }
 
-.botao-download {
-    color: var(--bg-color);
-    background: var(--cor-botao-salvar);
-    border-radius: 5px;
-    border: none;
-    width: 25%;
-    height: 25px;
-}
-
 .container-social {
     cursor: pointer;
     display: flex;

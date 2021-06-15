@@ -44,9 +44,25 @@ pre {
     height: 100%;
 }
 
-.botao-visualizar {
-    width: 90vw;
+.botoes-centro {
+    display: flex;
+    justify-content: space-between;
+}
 
+.botao-visualizar {
+    width: 60%;
+    background-color: var(--cor-botao-visualizar);
+    height: 3.5rem;
+    border: none;
+    border-radius: 8px;
+    color: var(--cor-texto);
+    font-family: 'Inter';
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.botao-download {
+    width: 35%;
     background-color: var(--cor-botao-visualizar);
     height: 3.5rem;
     border: none;
@@ -71,8 +87,7 @@ pre {
         height: 60vh;
     }
         
-    .botao-visualizar {
-        width: 100%;
+    button, select, .usuario-logado {
         cursor: pointer;
     }
 }

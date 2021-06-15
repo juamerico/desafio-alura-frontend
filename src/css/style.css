@@ -35,32 +35,32 @@
     border-radius: 8px;
 }
 
-.botao-salvar:hover, .botao-download:hover {
+.botao-salvar:hover {
     background: var(--cor-botao-salvar-hover);
     transition: 0.5s;
 }
 
-.botao-salvar:active, .botao-download:active {
+.botao-salvar:active {
     border: 4px solid var(--borda-botao-salvar-pressed);
     transition: none;
 }
 
-.botao-salvar:focus, .botao-download:focus {
+.botao-salvar:focus {
     background: var(--cor-botao-salvar-focus);
     transition: 0.3s;
 }
 
-.botao-visualizar:hover {
+.botao-visualizar:hover, .botao-download:hover {
     background: var(--cor-botao-visualizar-hover);
     transition: 0.5s;
 }
 
-.botao-visualizar:active {
+.botao-visualizar:active, .botao-download:active {
     border: 4px solid var(--borda-botao-visualizar-pressed);
     transition: none;
 }
 
-.botao-visualizar:focus {
+.botao-visualizar:focus, .botao-download:focus {
     background: var(--cor-botao-visualizar-focus);
     transition: 0.3s;
 }
