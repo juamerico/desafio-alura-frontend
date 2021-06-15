@@ -42,21 +42,3 @@ function atribuiId() {
 function salvaLocalStorage(objetoJson) {
     localStorage.setItem(objetoJson.id, JSON.stringify(objetoJson))
 }
-
-//salvar imagem
-import domtoimage from '../node_modules'
-const require = createRequire(import.meta.url)
-
-const botaoDownload = document.querySelector(".botao-download")
-
-function downloadImagem() {
-    domtoimage.toBlob(document.querySelector(".fundo-colorido"))
-        .then(function (blob) {
-        window.saveAs(blob, "code.png");
-        }
-    )
-}
-
-botaoDownload.addEventListener("click", () => {
-    downloadImagem()
-})
