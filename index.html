@@ -5,16 +5,16 @@
     <head>
         <title>Editor de Código</title>
 
-        <link rel="stylesheet" href="css/vsc.css">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/scrollbar.css">
-        <link rel="stylesheet" href="css/menu_mobile.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/coluna_esquerda.css">
-        <link rel="stylesheet" href="css/centro.css">
-        <link rel="stylesheet" href="css/coluna_direita.css">
+        <link rel="stylesheet" href="src/index/css/vsc.css">
+        <link rel="stylesheet" href="src/index/css/reset.css">
+        <link rel="stylesheet" href="src/index/css/scrollbar.css">
+        <link rel="stylesheet" href="src/index/css/menu_mobile.css">
+        <link rel="stylesheet" href="src/index/css/style.css">
+        <link rel="stylesheet" href="src/index/css/base.css">
+        <link rel="stylesheet" href="src/index/css/header.css">
+        <link rel="stylesheet" href="src/index/css/coluna_esquerda.css">
+        <link rel="stylesheet" href="src/index/css/centro.css">
+        <link rel="stylesheet" href="src/index/css/coluna_direita.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
 
@@ -23,36 +23,36 @@
     <body>
         <!-- CABEÇALHO -->
         <header>
-            <a href="./index.html"><img class="logo" src="img/Logo.svg" alt="Logo escrito Alura DEV"></a>
+            <a href="./index.html"><img class="logo" src="src/index/img/Logo.svg" alt="Logo escrito Alura DEV"></a>
 
             <input type="text" name="busca" class="busca inputs" id="busca" placeholder="   Busque por algo">
 
             <div class="usuario-logado">
-                <img class="foto-usuario" src="img/Photo.svg" alt="Foto de perfil do usuário">
+                <img class="foto-usuario" src="src/index/img/Photo.svg" alt="Foto de perfil do usuário">
                 <span class="nome">Harry</span>
             </div>
 
-            <img class="lupa" src="img/Lupa.svg" alt="Lupa">
-            <a href="#" class="barras"><img src="img/Barras.svg" alt="Três barras horizontais"></a>
-            <img class="fechar" src="img/Fechar.svg" alt="Fechar">
+            <img class="lupa" src="src/index/img/Lupa.svg" alt="Lupa">
+            <a href="#" class="barras"><img src="src/index/img/Barras.svg" alt="Três barras horizontais"></a>
+            <img class="fechar" src="src/index/img/Fechar.svg" alt="Fechar">
         </header>
 
         <!-- MENU HAMBURGER -->
         <menu class="menu-mobile">
             <div class="mobile mobile-editor">
-                <img src="img/Editor_Icon.svg" class="icone-mobile" alt="Ícone de código HTML">
+                <img src="src/index/img/Editor_Icon.svg" class="icone-mobile" alt="Ícone de código HTML">
                 <a href="index.html">Editor de código</a>
             </div>
 
             <div class="mobile mobile-comunidade">
-                <img src="img/Comunidade_Icon.svg" class="icone-mobile" alt="Ícone representando um grupo de pessoas">
+                <img src="src/index/img/Comunidade_Icon.svg" class="icone-mobile" alt="Ícone representando um grupo de pessoas">
                 <a href="comunidade.html">Comunidade</a>
             </div>
 
             <span class="mobile-linha"></span>
 
             <div class="menu-mobile-usuario">
-                <img class="mobile-foto-usuario" src="img/Photo.svg" alt="Foto de perfil do usuário">
+                <img class="mobile-foto-usuario" src="src/index/img/Photo.svg" alt="Foto de perfil do usuário">
                 <span class="nome">Harry</span>
             </div>
         </menu>
@@ -63,12 +63,12 @@
                 <h3>Menu</h3>
 
                 <div class="menu menu-editor">
-                    <img src="img/Editor_Icon.svg" class="icone-menu" alt="Ícone de código HTML">
+                    <img src="src/index/img/Editor_Icon.svg" class="icone-menu" alt="Ícone de código HTML">
                     <a href="index.html">Editor de código</a>
                 </div>
 
                 <div class="menu menu-comunidade">
-                    <img src="img/Comunidade_Icon.svg" class="icone-menu" alt="Ícone representando um grupo de pessoas">
+                    <img src="src/index/img/Comunidade_Icon.svg" class="icone-menu" alt="Ícone representando um grupo de pessoas">
                     <a href="comunidade.html">Comunidade</a>
                 </div>
             </menu>
@@ -80,7 +80,7 @@
 
                     <div class="fundo-preto">
 
-                        <img class="mac_buttons" src="img/mac_buttons.svg" alt="Três círculos: um vermelho, um amarelo e um verde">
+                        <img class="mac_buttons" src="src/index/img/mac_buttons.svg" alt="Três círculos: um vermelho, um amarelo e um verde">
 
                         <pre><code spellcheck="false" contenteditable="true" class="editor"></code></pre>
                     </div>
@@ -99,7 +99,7 @@
 
                     <input class="inputs nome-projeto itens-menu-direito" type="text" placeholder="Nome do seu projeto" required>
 
-                    <input class="inputs descricao-projeto itens-menu-direito" type="text" placeholder="Descrição do seu projeto" required>
+                    <textarea class="inputs descricao-projeto itens-menu-direito" type="text" placeholder="Descrição do seu projeto" required></textarea>
                 </div>
 
                 <div class="personalizacao">
@@ -113,17 +113,15 @@
 
                     <input class="seletor-cor itens-menu-direito" type="color" value="#6BD1FF">
                     
-                    <input class="botao-salvar itens-menu-direito" type="submit" onclick="salvaProjeto()" value="Salvar projeto">
+                    <input class="botao-salvar itens-menu-direito" type="submit" value="Salvar projeto">
                 </div>
             </form>
 
         </main>
 
         <!-- SCRIPTS -->
-        <script src="js/menu_mobile.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-        <script src="js/hl.js"></script>
-        <script src="js/index.js"></script>
+        <script src="dist/bundle.js"></script>
     </body>
 
 </html>

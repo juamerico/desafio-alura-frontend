@@ -14,14 +14,16 @@ body {
     background-color: var(--cor-input);
     
     border: none;
-    /* resize: none; */
-    /* padding-left: .75rem; */
+    resize: none;
+    line-height: 3rem;
+    padding-inline-start: var(--padding-placeholder)
 }
 
-.inputs::placeholder {
+.inputs::placeholder, textarea::placeholder {
     color: var(--cor-placeholder);
     font-size: 1rem;
     font-family: 'Inter';
+    line-height: 3rem;
 }
 
 code {

@@ -1,0 +1,112 @@
+header {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr .25fr 1fr;
+
+    margin: 5vw;
+    height: 10vh;
+    max-height: 100px;
+    width: auto;
+}
+
+#busca {
+    display: none;
+}
+
+.usuario-logado {
+    display: none;
+}
+
+.logo {
+    grid-column: 1 / 1;
+    width: 100%;
+    align-self: center;
+}
+
+.lupa {
+    grid-column: 3 / 3;
+    width: 50%;
+    justify-self: end;
+    align-self: center;
+}
+
+.barras {
+    grid-column: 5 / 5;
+    width: 50%;
+    justify-self: end;
+    align-self: center;
+}
+
+.fechar {
+    display: none;
+    grid-column: 5 / 5;
+    width: 50%;
+    justify-self: end;
+    align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        grid-template-columns: 2fr .5fr 5fr .5fr 1fr;
+        grid-template-rows: 3.5rem;
+    }
+
+    #busca {
+        grid-column: 3 / 3;
+        display: unset;
+        width: 100%;
+    }
+
+    .barras {
+        width: 30%;
+    }
+
+    .lupa {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        max-height: 80px;
+        grid-template-columns: 2fr 4fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 2rem;
+    }
+
+    .logo {
+        width: 50%;
+        height: auto;
+        min-width: 115px;
+    }
+
+    #busca {
+        grid-column: 2 / 2;
+        height: 100%;
+        padding-left: 0;
+    }
+
+    .usuario-logado {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-column: 4 / 4;
+        justify-self: end;
+        width: 7rem;
+        height: 3.5rem;
+    }
+
+    .foto-usuario {
+        width: 2rem;
+    }
+    
+    .nome {
+        color: white;
+        font-family: 'Inter';
+        font-size: 1rem;
+    }
+
+    .barras, .fechar {
+        display: none;
+    }
+}

@@ -32,7 +32,7 @@ function montaCartao(projeto) {
 
             <div style="background-color:${projeto.detalhesDoProjeto.corDaBorda}" id="fundo-colorido" class="fundo-colorido">
                 <div class="fundo-preto">
-                    <img class="mac_buttons" src="img/mac_buttons.svg" alt="Três círculos: um vermelho, um amarelo e um verde">
+                    <img class="mac_buttons" src="src/comunidade/img/mac_buttons.svg" alt="Três círculos: um vermelho, um amarelo e um verde">
 
                     <pre><code class="hljs ${projeto.detalhesDoProjeto.linguagem}"></code></pre>
                 </div>
@@ -49,15 +49,15 @@ function montaCartao(projeto) {
 
             <div class="auto-layout">
                 <div class="container-social container-comentarios">
-                    <img class="icone-social" src="img/Balao.svg" alt="Balão de fala"><span class="comentarios">0</span>
+                    <img class="icone-social" src="src/comunidade/img/Balao.svg" alt="Balão de fala"><span class="comentarios">0</span>
                 </div>
 
                 <div class="container-social container-curtidas">
-                    <img class="icone-social branco" src="img/Coracao.svg" alt="Coração"><img class="icone-social vermelho" src="img/Coracao_v.svg" alt="Coração"><span class="curtidas">0</span>
+                    <img class="icone-social branco" src="src/comunidade/img/Coracao.svg" alt="Coração"><img class="icone-social vermelho" src="src/comunidade/img/Coracao_v.svg" alt="Coração"><span class="curtidas">0</span>
                 </div>
 
                 <div class="usuario-logado projeto-usuario">
-                    <img class="foto-usuario" src="img/Photo.svg" alt="Foto de perfil do usuário">
+                    <img class="foto-usuario" src="src/comunidade/img/Photo.svg" alt="Foto de perfil do usuário">
                     <span class="nome">@Harry</span>
                 </div>
             </div>

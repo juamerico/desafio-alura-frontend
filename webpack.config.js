@@ -1,13 +1,16 @@
 const path = require("path")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
-    entry: ["./src/js/comunidade.js", "./src/js/hl.js", "./src/js/index.js", "./src/js/menu_mobile.js"],
+    entry: [
+        "./src/index/js/index.js",
+        "./src/index/js/menuMobile.js",
+        "./src/index/js/hl.js",
+        "./src/index/js/domToImage",
+        "./src/index/js/fileSaver.js"
+    ],
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js",
         clean: true
-    },
-
-    plugins: [new HtmlWebpackPlugin()]
+    }
 }
