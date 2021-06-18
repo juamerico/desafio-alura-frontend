@@ -1,6 +1,7 @@
 header {
     display: grid;
-    grid-template-columns: 3fr 2fr 1fr .25fr 1fr;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
 
     margin: 5vw;
     height: 10vh;
@@ -17,51 +18,42 @@ header {
 }
 
 .logo {
-    grid-column: 1 / 1;
-    width: 100%;
-    align-self: center;
+    height: 100%;
 }
 
 .lupa {
     grid-column: 3 / 3;
-    width: 50%;
     justify-self: end;
-    align-self: center;
 }
 
-.barras {
-    grid-column: 5 / 5;
-    width: 50%;
+.barras, .fechar {
     justify-self: end;
-    align-self: center;
+    grid-column: 4 / 4;
+    justify-self: end;
 }
 
 .fechar {
     display: none;
-    grid-column: 5 / 5;
-    width: 50%;
-    justify-self: end;
-    align-self: center;
 }
 
 @media screen and (min-width: 768px) {
     header {
-        grid-template-columns: 2fr .5fr 5fr .5fr 1fr;
-        grid-template-rows: 3.5rem;
+        grid-template-columns: auto auto auto auto auto;
     }
 
     #busca {
-        grid-column: 3 / 3;
+        grid-column: 2 / 5;
         display: unset;
         width: 100%;
-    }
-
-    .barras {
-        width: 30%;
+        height: 100%;
     }
 
     .lupa {
         display: none;
+    }
+
+    .barras, .fechar {
+        grid-column:  5 / 5;
     }
 
 }
