@@ -28,12 +28,12 @@
 }
 
 pre {
-    overflow: scroll;
+    overflow: hidden;
     max-height: 48vh;
+    cursor: text;
 }
 
 .editor {
-    cursor: text;
     display: block;
     place-self: end;
     justify-self: center;

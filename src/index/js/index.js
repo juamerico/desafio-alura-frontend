@@ -45,14 +45,14 @@ function salvaLocalStorage(objetoJson) {
 }
 
 ///
-import domtoimage from "./domToImage";
+import domtoimage from "./domToImage"
 
-const canvas = document.querySelector(".fundo-colorido");
-const botaoDownload = document.querySelector(".botao-download");
+const canvas = document.querySelector(".fundo-colorido")
+const botaoDownload = document.querySelector(".botao-download")
 
 botaoDownload.addEventListener("click", function(){
     domtoimage.toPng(canvas)
     .then(function (blob) {
-        window.saveAs(blob, "code.png");
-    });
-});
+        window.saveAs(blob, "code.png")
+    })
+})

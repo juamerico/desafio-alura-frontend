@@ -18,7 +18,7 @@
 
 .descricao-projeto {
     width: calc(90vw - var(--padding-placeholder));
-    height: 5rem;
+    /* height: 5rem; */
     margin-top: 1rem;
     padding-top: 0;
 }
