@@ -1,5 +1,5 @@
 ## Desafio Front End - Alura Dev
-### https://juamerico.github.io/desafio-alura/
+### https://juamerico.github.io/desafio-alura-frontend/
 
 ### Objetivo
 O projeto foi desenvolvido durante o Alura Challenges - Front End, com a proposta de criação de um site onde o usuário possa armazenar e compartilhar pequenos trechos de código com o destaque de sintaxe.</br></br>
